@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="topbar">
+            <div class="logo">
+                <h2>MAUTIGU</h2>
+            </div>
+            <div class="search">
+                <input type="text" id="search" placeholder="Search Here">
+                <label for="search"><i class="fas fa-search"></i></label>
+            </div>
+            <i class="fas fa-bell"></i>
+            <div class="user">
+                <img src="img/mcsc.png" alt="">
+            </div>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-th-large"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-building-columns"></i>
+                        Campaigns
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-user"></i>
+                        Employees
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-chart-bar"></i>
+                        Analytics
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        Earnings
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        Settings
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        Help
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-power-off"></i>
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="cards">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">16,217</div>
+                        <div class="card-name">Accounts</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">1,029</div>
+                        <div class="card-name">For Field</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-motorcycle"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">815</div>
+                        <div class="card-name">Released</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-envelope-circle-check"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">214</div>
+                        <div class="card-name">Remaining</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fa-solid fa-envelopes-bulk"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="charts">
+                <div class="chart">
+                    <h2>Accounts</h2>
+                    <div id="barChart"></div>
+                </div>
+                <div class="chart">
+                    <h2>Progress</h2>
+                    <div id="pieChart"></div>
+                </div>
+                <div class="chart">
+                    <h2>For Field</h2>
+                    <div id="barChart2"></div>
+                </div>
+                <div class="chart">
+                    <h2>Released/Remaining</h2>
+                    <div id="pieChart2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.37.1/apexcharts.min.js"></script>
+    <script src="chart1.js"></script>
+    <script src="chart2.js"></script>
+    <script src="chart3.js"></script>
+    <script src="chart4.js"></script>
+</body>
+</html>
